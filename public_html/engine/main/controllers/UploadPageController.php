@@ -63,8 +63,8 @@ class UploadPageController extends BaseController
                     'video' => $fileName,
                     'name' => $_REQUEST['name'],
                     'description' => $_REQUEST['description'],
-                    'quality' => $_REQUEST['quality'] ? 0 : 1,
-                    'commentary' => $_REQUEST['commentary'] ? 0 : 1,
+                    'quality' => $_REQUEST['quality'] === 'true' ? 1 : 0,
+                    'commentary' => $_REQUEST['commentary'] === 'true' ? 1 : 0,
                     'is_processed' => 0
                 ]
             ]);
@@ -80,10 +80,6 @@ class UploadPageController extends BaseController
             $curl = curl_init();
             $aPost = array(
                 'id' => $idNewVideo + 1,
-                'name' => $_REQUEST['name'],
-                'description' => $_REQUEST['description'],
-                'quality' => $_REQUEST['quality'] ? 0 : 1,
-                'commentary' => $_REQUEST['commentary'] ? 0 : 1,
             );
             if ((version_compare(PHP_VERSION, '5.5') >= 0)) {
                 $aPost['file'] = new \CURLFile($targetPath);

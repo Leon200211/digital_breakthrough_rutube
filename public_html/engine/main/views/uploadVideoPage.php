@@ -57,7 +57,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/templates/default/include/header.php'
                                 </div>
                                 <div class="checkbox">
                                     <input type="checkbox" id="vid-commentary">
-                                    <label for="vid-quality2">Улучшить качество 2</label>
+                                    <label for="vid-quality2">Тифлокомментарии</label>
                                 </div>
                             </div>
                         </div>
@@ -138,6 +138,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/templates/default/include/header.php'
                         let JSONobj2 = JSON.parse(xhr2.response)
                         if(JSONobj2.is_processed == 1){
                             clearInterval(proccess)
+                            document.querySelector('#process-label').textContent = 'Обработка завершена'
                             document.querySelector('.video-frame').style.display = 'none'
                             document.querySelector('video').removeAttribute('hidden')
                             document.querySelector('source').setAttribute('src', `<?=SITE_URL?>files/uploads/${JSONobj2.video}`)
