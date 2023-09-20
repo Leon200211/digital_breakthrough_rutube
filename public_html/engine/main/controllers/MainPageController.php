@@ -12,11 +12,17 @@ use engine\main\models\MainModel;
 
 class MainPageController extends BaseController
 {
+    public $videoData = [];
 
     public function index() : void 
     {
+        if(!$this->model) $this->model = MainModel::getInstance();
 
-
+        $this->videoData = $this->model->read('upload_video', [
+            'fields' => ['id', 'video', 'name', 'description', 'date_create', 'quality', 'commentary', 'is_processed'],
+            'order' => ['id'],
+            'order_direction' => ['DESC'],
+        ]);
     }
 
     public function outputData()

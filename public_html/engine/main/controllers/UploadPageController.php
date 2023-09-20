@@ -10,17 +10,22 @@ class UploadPageController extends BaseController
 
     private $_format = ['mp4', 'mov', 'wmv', 'avi', 'avchd', 'flv', 'f4v', 'swf', 'mkv', 'webm'];
 
-    public function index() : void
+
+    public function index()
     {
 
     }
 
+    /**
+     * @return false|string
+     * @throws \engine\base\exceptions\RouteException
+     */
     public function outputData()
     {
         return $this->render($_SERVER['DOCUMENT_ROOT'] . '/engine/main/views/uploadVideoPage');
     }
 
-    public function uploadVideo()
+    public function uploadVideo(): void
     {
         if (empty($_FILES['file']['name'])) {
             http_response_code(400);
@@ -105,7 +110,10 @@ class UploadPageController extends BaseController
     }
 
 
-    public function uploadVideoFromApi()
+    /**
+     * @return void
+     */
+    public function uploadVideoFromApi(): void
     {
         if(!$this->model) $this->model = MainModel::getInstance();
         $videoDb = $this->model->read('upload_video', [
@@ -144,6 +152,9 @@ class UploadPageController extends BaseController
 
     }
 
+    /**
+     * @return void
+     */
     public function checkVideo(): void
     {
         if (empty($_REQUEST['id'])) {
@@ -164,8 +175,6 @@ class UploadPageController extends BaseController
             exit();
         }
 
-        file_put_contents(__DIR__ . '/test.log', print_r($videoDb, 1), FILE_APPEND);
-
         if ($videoDb[0]['is_processed'] == 1) {
             http_response_code(200);
             $result = [
@@ -173,7 +182,6 @@ class UploadPageController extends BaseController
                 'video' => $videoDb[0]['video'],
             ];
             echo json_encode($result);
-            file_put_contents(__DIR__ . '/test1.log', print_r($result, 1), FILE_APPEND);
         } else {
             http_response_code(200);
             $result = [

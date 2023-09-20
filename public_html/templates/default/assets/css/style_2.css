@@ -22,6 +22,9 @@ form{
     flex-direction: column;
     min-width: 500px;
 }
+.video {
+    margin: 40px;
+}
 .video-inputs{
     display: flex;
     justify-content: center;

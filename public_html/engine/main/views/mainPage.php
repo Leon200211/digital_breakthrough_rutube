@@ -14,13 +14,32 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/templates/default/include/header.php'
         </div>
         <div class="videos-list">
 
-            <?php for($i=0; $i < 10; $i++): ?>
+            <?php foreach ($this->videoData as $key => $video): ?>
                 <div class="video">
                     <video width="250" height="150" controls>
-                        <source src="<?=SITE_URL?>files/uploads/test_415410.mp4" type="video/mp4">
+                        <source src="<?=SITE_URL?>files/uploads/<?=$video['video']?>" type="video/mp4">
                     </video>
+                    <div>
+                        <?=$video['name']?>
+                    </div>
+                    <div>
+                        <?=$video['description']?>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin-top: 10px;">
+                        <div>
+                            <?=$video['date_create']?>
+                        </div>
+                        <div>
+                            <?php if($video['quality']): ?>
+                                <img src="<?=SITE_URL?>templates/default/free-icon-high-quality-7479467.png" height="20px;" width="20px;">
+                            <?php endif; ?>
+                            <?php if($video['commentary']): ?>
+                                <img src="<?=SITE_URL?>templates/default/free-icon-sound-3293603.png" height="20px;" width="20px;">
+                            <?php endif; ?>
+                        </div>
+                    </div>
                 </div>
-            <?php endfor; ?>
+            <?php endforeach; ?>
 
 
         </div>
