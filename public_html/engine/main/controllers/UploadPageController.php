@@ -69,7 +69,11 @@ class UploadPageController extends BaseController
 
 
             http_response_code(200);
-            echo "success";
+            $result = [
+                "id" => $idNewVideo,
+                "status" => 'success'
+            ];
+            echo json_encode($result);
 
             $curl = curl_init();
             $aPost = array(
@@ -138,6 +142,43 @@ class UploadPageController extends BaseController
             exit();
         }
 
+    }
+
+    public function checkVideo(): void
+    {
+        if (empty($_REQUEST['id'])) {
+            http_response_code(400);
+            echo "Error 400";
+            exit();
+        }
+
+        if(!$this->model) $this->model = MainModel::getInstance();
+        $videoDb = $this->model->read('upload_video', [
+            'fields' => ['id', 'is_processed', 'video'],
+            'where' => ['id' => $_REQUEST['id']]
+        ]);
+
+        if (empty($videoDb)) {
+            http_response_code(400);
+            echo "Не корректные данные";
+            exit();
+        }
+
+        if ($videoDb[0]['is_processed'] == 1) {
+            http_response_code(200);
+            $result = [
+                'is_processed' => 1,
+                'video' => $videoDb[0]['video'],
+            ];
+            echo json_encode($result);
+        } else {
+            http_response_code(200);
+            $result = [
+                'is_processed' => 0
+            ];
+            echo json_encode($result);
+        }
+        exit();
     }
 
 }

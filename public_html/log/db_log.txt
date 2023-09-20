@@ -506,3 +506,403 @@ Fault: 20-09-2023 12:52:53 - Ошибка подключение к БД: 1045 A
 fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
  In line 29
 
+Fault: 20-09-2023 18:33:18 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='undefined' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:33:20 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='undefined' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:33:22 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='undefined' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:33:24 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='undefined' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:33:26 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='undefined' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:33:28 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='undefined' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:33:30 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='undefined' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:33:32 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='undefined' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:33:34 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='undefined' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:33:36 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='undefined' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:33:38 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='undefined' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:33:40 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='undefined' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:33:42 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='undefined' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:33:44 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='undefined' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:33:46 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='undefined' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:33:48 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='undefined' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:33:50 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='undefined' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:33:52 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='undefined' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:33:54 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='undefined' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:33:56 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='undefined' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:33:58 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='undefined' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:34:00 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='undefined' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:34:02 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='undefined' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:34:04 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='undefined' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:34:06 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='undefined' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:34:08 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='undefined' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:34:10 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='undefined' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:34:12 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='undefined' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:34:14 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='undefined' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:34:16 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='undefined' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:34:32 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='undefined' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:34:38 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='67' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:34:40 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='67' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:34:42 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='67' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:34:44 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='67' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:34:46 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='67' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:34:48 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='67' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:34:50 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='67' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:34:52 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='67' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:34:54 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='67' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:34:56 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='67' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:34:58 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='67' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:35:00 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='67' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:35:02 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='67' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:35:04 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='67' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:35:06 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='67' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:35:08 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='67' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:35:10 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='67' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:35:12 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='67' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:35:14 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='67' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:35:16 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='67' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:35:18 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='67' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:35:20 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='67' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:35:22 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='67' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:35:27 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:35:29 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:35:31 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:35:34 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:35:36 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:35:38 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:35:40 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:35:42 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:35:43 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:35:45 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:35:47 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:35:49 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:35:51 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:35:53 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:35:55 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:35:57 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:35:59 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:36:01 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:36:03 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:36:05 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:36:07 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:36:09 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:36:11 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:36:13 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:36:15 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:36:17 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:36:20 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:36:22 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:36:24 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:36:26 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:36:28 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:36:30 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:36:32 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:36:34 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:36:36 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:36:38 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:36:40 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:36:42 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:36:44 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:36:46 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:36:48 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:36:50 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:36:52 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:36:54 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:36:56 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+
+Fault: 20-09-2023 18:36:58 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`is_send` FROM upload_video  WHERE upload_video.id='68' - 1054 Unknown column 'upload_video.is_send' in 'field list'
+fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 57
+

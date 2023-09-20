@@ -51,6 +51,11 @@ class Settings
             'controllerPath' => '\engine\main\controllers\\',
             'action' => 'uploadVideoFromApi',
         ],
+        '/checkVideo' => [
+            'controller' => 'uploadPage',
+            'controllerPath' => '\engine\main\controllers\\',
+            'action' => 'checkVideo',
+        ],
 
 
     ];

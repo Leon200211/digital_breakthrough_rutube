@@ -107,11 +107,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/templates/default/include/header.php'
             document.querySelector('.label').textContent = percent.toFixed(2) + '%'
 
         })
-        if(<?=?>){
-            let proccess = setInterval(() => {
-
-            }, 2000)
-        }
 
         xhr.onload = () => {
             document.querySelector('#vid-quality').setAttribute('disabled', true)
@@ -126,10 +121,34 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/templates/default/include/header.php'
             document.querySelector('#process-itemBar').style.width = '100%'
             document.querySelector('#process').style.color = 'green'
             document.querySelector('#process-label').textContent = 'Обработка...'
-            setTimeout(() => {
-                document.querySelector('.video-frame').style.display = 'none'
-                document.querySelector('video').removeAttribute('hidden')
-            }, 800)
+            // setTimeout(() => {
+            //     document.querySelector('.video-frame').style.display = 'none'
+            //     document.querySelector('video').removeAttribute('hidden')
+            // }, 800)
+            console.log(xhr.response.status)
+            let JSONobj = JSON.parse(xhr.response)
+            console.log(JSONobj.status)
+            if (JSONobj.status == 'success') {
+                var xhr2 = new XMLHttpRequest()
+                var formdata2 = new FormData()
+                formdata2.append('id', JSONobj.id)
+                var proccess = setInterval(() => {
+                    xhr2.open('POST', '/checkVideo')
+                    xhr2.send(formdata2)
+                    xhr2.onload = () => {
+                        console.log(xhr2.response)
+                        let JSONobj2 = JSON.parse(xhr2.response)
+                        if(JSONobj2.is_processed == 1){
+                            clearInterval(proccess)
+                            document.querySelector('.video-frame').style.display = 'none'
+                            document.querySelector('video').removeAttribute('hidden')
+                            document.querySelector('source').setAttribute('src', `<?=SITE_URL?>files/uploads/${JSONobj2.video}`)
+                            document.querySelector('video').currentTime = 0
+                            document.querySelector('video').load()
+                        }
+                    }
+                }, 2000)
+            }
 
             let responseObj = xhr.response;
             console.log(responseObj); // Привет, мир!
