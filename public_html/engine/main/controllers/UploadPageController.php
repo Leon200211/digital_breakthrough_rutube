@@ -22,20 +22,18 @@ class UploadPageController extends BaseController
 
     public function uploadVideo()
     {
-
-        if (empty($_FILES['avatar']['name'])) {
+        if (empty($_FILES['file']['name'])) {
             http_response_code(400);
             echo "Не подходящий формат файла";
             exit();
         }
 
-        $ext = pathinfo($_FILES['avatar']['name'], PATHINFO_EXTENSION);
+        $ext = pathinfo($_FILES['file']['name'], PATHINFO_EXTENSION);
         if (!in_array($ext, $this->_format)) {
             http_response_code(400);
             echo "Не подходящий формат файла";
             exit();
         }
-
 
         if(!$this->model) $this->model = MainModel::getInstance();
         $id = $this->model->read('upload_video', [
@@ -51,18 +49,17 @@ class UploadPageController extends BaseController
             $idNewVideo = 0;
         }
 
-
         $fileName = 'test_' . random_int(1, 1000000) . '.' . $ext;
         $targetPath = $_SERVER['DOCUMENT_ROOT'] . "/files/uploads/" . $fileName;
 
-        if (move_uploaded_file($_FILES['avatar']["tmp_name"], $targetPath)) {
+        if (move_uploaded_file($_FILES['file']["tmp_name"], $targetPath)) {
             $this->model->add('upload_video', [
                 'fields' => [
                     'video' => $fileName,
-                    'name' => 'test',
-                    'description' => 'test',
-                    'quality' => 1,
-                    'commentary' => 1,
+                    'name' => $_REQUEST['name'],
+                    'description' => $_REQUEST['description'],
+                    'quality' => $_REQUEST['quality'] ? 0 : 1,
+                    'commentary' => $_REQUEST['commentary'] ? 0 : 1,
                     'is_processed' => 0
                 ]
             ]);
@@ -70,15 +67,18 @@ class UploadPageController extends BaseController
 
             http_response_code(200);
             $result = [
-                "id" => $idNewVideo,
+                "id" => $idNewVideo + 1,
                 "status" => 'success'
             ];
             echo json_encode($result);
 
             $curl = curl_init();
             $aPost = array(
-                'default_file' => 'html_version.html',
-                'expiration' => (2*31*24*60*60)
+                'id' => $idNewVideo + 1,
+                'name' => $_REQUEST['name'],
+                'description' => $_REQUEST['description'],
+                'quality' => $_REQUEST['quality'] ? 0 : 1,
+                'commentary' => $_REQUEST['commentary'] ? 0 : 1,
             );
             if ((version_compare(PHP_VERSION, '5.5') >= 0)) {
                 $aPost['file'] = new \CURLFile($targetPath);
@@ -164,6 +164,8 @@ class UploadPageController extends BaseController
             exit();
         }
 
+        file_put_contents(__DIR__ . '/test.log', print_r($videoDb, 1), FILE_APPEND);
+
         if ($videoDb[0]['is_processed'] == 1) {
             http_response_code(200);
             $result = [
@@ -171,6 +173,7 @@ class UploadPageController extends BaseController
                 'video' => $videoDb[0]['video'],
             ];
             echo json_encode($result);
+            file_put_contents(__DIR__ . '/test1.log', print_r($result, 1), FILE_APPEND);
         } else {
             http_response_code(200);
             $result = [
@@ -178,6 +181,7 @@ class UploadPageController extends BaseController
             ];
             echo json_encode($result);
         }
+        session_write_close();
         exit();
     }
 

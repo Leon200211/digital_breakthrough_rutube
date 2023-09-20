@@ -20,7 +20,7 @@ button, label, a{
 form{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    min-width: 500px;
 }
 .video-inputs{
     display: flex;
@@ -29,7 +29,8 @@ form{
 }
 .thatOneForm{
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
     width: 100%;
     flex-wrap: wrap;
 }
@@ -137,6 +138,7 @@ form{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    max-width: 400px;
     gap: 30px;
     margin-bottom: 20px;
 }

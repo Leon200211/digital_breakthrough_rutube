@@ -36,7 +36,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/templates/default/include/header.php'
                         </div>
                     </div>
                     <video controls style="border-radius: 15px; width: 100%;height: 250px; max-width: 400px; max-height: 250px" hidden>
-                        <source src="uploads/skyrimTest.mp4" type="video/mp4">
+                        <source src="" type="video/mp4">
                     </video>
                 </div>
                 <form class="form" id="uploadForm" method="POST" enctype="multipart/form-data" action="upload.php">
@@ -48,15 +48,15 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/templates/default/include/header.php'
                         </div>
 
                         <div class="info-inputs">
-                            <input type="text" class="video-name" placeholder="Введите название...">
-                            <textarea name="" id="" cols="30" rows="10" class="video-desc" placeholder="Введите описание..."></textarea>
+                            <input type="text" class="video-name" id="video_name" placeholder="Введите название...">
+                            <textarea name="" cols="30" rows="10" id="video_description" class="video-desc" placeholder="Введите описание..."></textarea>
                             <div class="video-checkbox">
                                 <div class="checkbox">
                                     <input type="checkbox" id="vid-quality">
                                     <label for="vid-quality">Улучшить качество</label>
                                 </div>
                                 <div class="checkbox">
-                                    <input type="checkbox" id="vid-quality2">
+                                    <input type="checkbox" id="vid-commentary">
                                     <label for="vid-quality2">Улучшить качество 2</label>
                                 </div>
                             </div>
@@ -94,23 +94,27 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/templates/default/include/header.php'
         e.preventDefault();
         const files = document.querySelector('[name=inpFile]').files
         const formData = new FormData()
-        formData.append('avatar', files[0])
+        formData.append('file', files[0])
+
+        formData.append('name', document.getElementById('video_name').value)
+        formData.append('description', document.getElementById('video_description').value)
+        formData.append('quality', document.getElementById('vid-quality').checked)
+        formData.append('commentary', document.getElementById('vid-commentary').checked)
+
         const xhr = new XMLHttpRequest()
-        // xhr.responseType = 'json'
 
         xhr.open('POST', '/uploadVideo')
         xhr.upload.addEventListener('progress', e => {
             const percent = e.lengthComputable ? (e.loaded / e.total) * 100 : 0;
-            console.log(e.loaded)
-            console.log(e.total)
+            // console.log(e.loaded)
+            // console.log(e.total)
             elem.style.width = percent.toFixed(2) + '%'
             document.querySelector('.label').textContent = percent.toFixed(2) + '%'
-
         })
 
         xhr.onload = () => {
             document.querySelector('#vid-quality').setAttribute('disabled', true)
-            document.querySelector('#vid-quality2').setAttribute('disabled', true)
+            document.querySelector('#vid-commentary').setAttribute('disabled', true)
             document.querySelector('.video-name').setAttribute('disabled', true)
             document.querySelector('.video-desc').setAttribute('disabled', true)
             document.querySelector('.video-info').style.display = 'flex'
@@ -121,11 +125,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/templates/default/include/header.php'
             document.querySelector('#process-itemBar').style.width = '100%'
             document.querySelector('#process').style.color = 'green'
             document.querySelector('#process-label').textContent = 'Обработка...'
-            // setTimeout(() => {
-            //     document.querySelector('.video-frame').style.display = 'none'
-            //     document.querySelector('video').removeAttribute('hidden')
-            // }, 800)
-            console.log(xhr.response.status)
             let JSONobj = JSON.parse(xhr.response)
             console.log(JSONobj.status)
             if (JSONobj.status == 'success') {
@@ -136,7 +135,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/templates/default/include/header.php'
                     xhr2.open('POST', '/checkVideo')
                     xhr2.send(formdata2)
                     xhr2.onload = () => {
-                        console.log(xhr2.response)
                         let JSONobj2 = JSON.parse(xhr2.response)
                         if(JSONobj2.is_processed == 1){
                             clearInterval(proccess)
