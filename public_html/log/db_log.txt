@@ -498,3 +498,11 @@ Fault: 19-09-2023 21:56:43 - Ошибка в SQL запросе: INSERT INTO upl
 fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
  In line 57
 
+Fault: 20-09-2023 12:26:28 - Ошибка подключение к БД: 1045 Access denied for user 'u1988986_default'@'localhost' (using password: YES)
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 29
+
+Fault: 20-09-2023 12:52:53 - Ошибка подключение к БД: 1045 Access denied for user 'u1988986_default'@'localhost' (using password: YES)
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
+ In line 29
+

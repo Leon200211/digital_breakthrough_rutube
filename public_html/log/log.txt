@@ -20790,3 +20790,323 @@ Fault: 19-09-2023 21:57:30 - Не найден контроллер
 fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
  In line 62
 
+Fault: 19-09-2023 22:03:55 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 19-09-2023 22:03:55 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:09:43 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:09:43 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:09:43 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:09:43 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:09:43 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:09:43 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:09:43 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:09:43 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:09:43 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:09:43 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:09:43 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:09:43 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:09:49 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:09:49 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:12:31 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:12:31 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:14:24 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:14:24 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:17:27 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:17:27 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:18:43 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:18:43 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:21:15 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:21:16 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:21:22 - Не верное имя файла для подключения - engine/main/controllers/CURLFile
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\settings\internal_settings.php
+ In line 47
+
+Fault: 20-09-2023 11:21:42 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:23:03 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:23:04 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:23:38 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:23:38 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:24:11 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:24:11 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:24:42 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:24:42 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:25:23 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:25:23 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:26:01 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:26:01 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:26:55 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:26:55 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:28:49 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:28:49 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:29:17 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:29:44 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:29:44 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:30:02 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:30:15 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:30:15 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:30:43 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:31:05 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:31:05 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:41:27 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:41:28 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:42:56 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:42:56 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:45:48 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:45:48 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:46:29 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:46:30 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:46:38 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:52:13 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:52:13 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 11:52:30 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 12:03:12 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 12:03:13 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 12:03:46 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 12:03:46 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 12:04:13 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 12:04:28 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 12:04:28 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 12:04:36 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 12:10:06 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 12:10:06 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 12:11:13 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 12:11:13 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 12:25:45 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 12:26:23 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+
+Fault: 20-09-2023 12:26:23 - Не найден контроллер
+fileD:\my_data\sites\domains\digital_breakthrough_rutube\public_html\engine\base\controllers\RouteController.php
+ In line 62
+

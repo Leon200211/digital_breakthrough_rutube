@@ -46,6 +46,11 @@ class Settings
             'controllerPath' => '\engine\main\controllers\\',
             'action' => 'uploadVideo',
         ],
+        '/loadVideo' => [
+            'controller' => 'uploadPage',
+            'controllerPath' => '\engine\main\controllers\\',
+            'action' => 'uploadVideoFromApi',
+        ],
 
 
     ];

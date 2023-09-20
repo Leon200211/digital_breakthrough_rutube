@@ -10,7 +10,7 @@ use engine\base\controllers\BaseController;
 use engine\main\models\MainModel;
 
 
-class mainPageController extends BaseController
+class MainPageController extends BaseController
 {
 
     public function index() : void 
