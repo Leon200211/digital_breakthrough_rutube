@@ -17,6 +17,22 @@ a{
 button, label, a{
     cursor: pointer;
 }
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.video-inputs{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.thatOneForm{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
 .toVidList a{
     padding: 10px 20px;
     border: 1px solid transparent;
@@ -143,6 +159,7 @@ form button:hover, form button:focus{
     box-shadow: 0px 0px 10px rgba(0,0,0,20%);
 }
 .info-inputs{
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -166,6 +183,14 @@ form button:hover, form button:focus{
     gap: 10px;
     padding-top: 40px;
     width: 100%;
+}
+.vid-name{
+    margin-top: 20px;
+    padding: 5px;
+    width: 15%;
+    text-align: center;
+    border: 1px dashed;
+    display: none;
 }
 
 

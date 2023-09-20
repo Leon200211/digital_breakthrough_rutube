@@ -17,7 +17,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/templates/default/include/header.php'
             <?php for($i=0; $i < 10; $i++): ?>
                 <div class="video">
                     <video width="250" height="150" controls>
-                        <source src="<?=SITE_URL?>files/uploads/skyrimTest.mp4" type="video/mp4">
+                        <source src="<?=SITE_URL?>files/uploads/test_415410.mp4" type="video/mp4">
                     </video>
                 </div>
             <?php endfor; ?>
