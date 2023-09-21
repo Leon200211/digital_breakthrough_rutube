@@ -79,7 +79,9 @@ class UploadPageController extends BaseController
 
             $curl = curl_init();
             $aPost = array(
-                'id' => $idNewVideo + 1,
+                'upload_id' => $idNewVideo + 1,
+                'quality_upgrade' => $_REQUEST['quality'] === 'true' ? 1 : 0,
+                'generate_comments' => $_REQUEST['commentary'] === 'true' ? 1 : 0,
             );
             if ((version_compare(PHP_VERSION, '5.5') >= 0)) {
                 $aPost['file'] = new \CURLFile($targetPath);
@@ -87,15 +89,16 @@ class UploadPageController extends BaseController
             } else {
                 $aPost['file'] = "@".$targetPath;
             }
-            curl_setopt($curl, CURLOPT_URL, SITE_URL . 'loadVideo/test');
+            //curl_setopt($curl, CURLOPT_URL, SITE_URL . 'loadVideo/test');
+            curl_setopt($curl, CURLOPT_URL, "http://37.110.147.152:8000/api/upload_file");
             curl_setopt($curl, CURLOPT_TIMEOUT, 120);
             curl_setopt($curl, CURLOPT_BUFFERSIZE, 128);
             curl_setopt($curl, CURLOPT_POSTFIELDS, $aPost);
             curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
             curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, 0);
             curl_setopt($curl, CURLOPT_HEADER, 0);
-            curl_setopt($curl, CURLOPT_TIMEOUT_MS, 500);
-            $sResponse = curl_exec ($curl);
+            curl_setopt($curl, CURLOPT_TIMEOUT_MS, 2000);
+            $sResponse = curl_exec($curl);
 
             exit();
         } else {
