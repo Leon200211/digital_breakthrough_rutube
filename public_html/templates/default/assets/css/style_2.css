@@ -35,7 +35,10 @@ form{
     align-items: center;
     gap: 20px;
     width: 100%;
+    padding: 30px;
+    border-radius: 10px;
     flex-wrap: wrap;
+    box-shadow: 1px 1px 10px rgba(0,0,0, 20%);
 }
 .toVidList a{
     padding: 10px 20px;
@@ -94,7 +97,7 @@ form{
     position: absolute;
     width: 0%;
     height: 100%;
-    background: #5c8037;
+    background: #52C78F;
 }
 .label{
     margin-top: 7px;
@@ -147,18 +150,20 @@ form{
 }
 #inpFile{
     padding: 10px;
-    background: linear-gradient(90deg, rgb(9, 37, 178) 0%, rgb(26, 121, 199) 50%, rgb(30, 183, 203) 100%);
-    border-radius: 20px;
+    background: #FF645F;
+    border-radius: 8px;
     color: white;
     margin-right: 15px;
 }
 form button{
-    background: transparent;
-    border: 2px solid #ddd;
+    background: #FF645F;
+    border: 5px solid white;
+    outline: 3px solid #f66732;
     font-size: 20px;
     padding: 6px;
     border-radius: 10px;
     transition: .5s;
+    color: white;
 }
 form button:hover, form button:focus{
     box-shadow: 0px 0px 10px rgba(0,0,0,20%);
@@ -192,7 +197,7 @@ form button:hover, form button:focus{
 .vid-name{
     margin-top: 20px;
     padding: 5px;
-    width: 15%;
+    width: 10%;
     text-align: center;
     border: 1px dashed;
     display: none;

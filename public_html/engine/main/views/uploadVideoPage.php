@@ -82,78 +82,111 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/templates/default/include/header.php'
     let elem = document.querySelector('.itemBar')
     const rootDiv = document.querySelector('.container')
 
-    inpFile.oninput = () => {
-        console.log(inpFile.files[0].name)
-        if(inpFile.files.length){
+
+
+    inpFile.oninput = (i) => {
+        if(inpFile.files.length) {
             let fileName = inpFile.files[0].name
+            var splittedFileName = fileName.split('.')
             document.querySelector('.vid-name').style.display = 'inline-table'
             document.querySelector('.vid-name').textContent = fileName
+            document.querySelector('.vid-name').style.border = '1px dashed black'
+            document.querySelector('.vid-name').style.width = '10%'
+            document.querySelector('.vid-name').style.color = 'black'
         }
-    }
-    uploadForm.onsubmit = (e) => {
-        e.preventDefault();
-        const files = document.querySelector('[name=inpFile]').files
-        const formData = new FormData()
-        formData.append('file', files[0])
+            if (splittedFileName[1] == 'mp4' || splittedFileName[1] == 'mov' || splittedFileName[1] == 'wmv' || splittedFileName[1] == 'avi' || splittedFileName[1] == 'avchd' || splittedFileName[1] == 'flv' || splittedFileName[1] == 'f4v' || splittedFileName[1] == 'swf' || splittedFileName[1] == 'mkv' || splittedFileName[1] == 'webm') {
 
-        formData.append('name', document.getElementById('video_name').value)
-        formData.append('description', document.getElementById('video_description').value)
-        formData.append('quality', document.getElementById('vid-quality').checked)
-        formData.append('commentary', document.getElementById('vid-commentary').checked)
+                uploadForm.onsubmit = (e) => {
+                        e.preventDefault();
+                        const files = document.querySelector('[name=inpFile]').files
+                        const formData = new FormData()
+                        formData.append('file', files[0])
 
-        const xhr = new XMLHttpRequest()
+                        formData.append('name', document.getElementById('video_name').value)
+                        formData.append('description', document.getElementById('video_description').value)
+                        formData.append('quality', document.getElementById('vid-quality').checked)
+                        formData.append('commentary', document.getElementById('vid-commentary').checked)
 
-        xhr.open('POST', '/uploadVideo')
-        xhr.upload.addEventListener('progress', e => {
-            const percent = e.lengthComputable ? (e.loaded / e.total) * 100 : 0;
-            // console.log(e.loaded)
-            // console.log(e.total)
-            elem.style.width = percent.toFixed(2) + '%'
-            document.querySelector('.label').textContent = percent.toFixed(2) + '%'
-        })
+                        const xhr = new XMLHttpRequest()
 
-        xhr.onload = () => {
-            document.querySelector('#vid-quality').setAttribute('disabled', true)
-            document.querySelector('#vid-commentary').setAttribute('disabled', true)
-            document.querySelector('.video-name').setAttribute('disabled', true)
-            document.querySelector('.video-desc').setAttribute('disabled', true)
-            document.querySelector('.video-info').style.display = 'flex'
-            document.querySelector('[for="inpFile1"]').style.display = 'none'
-            document.querySelector('.vid-name').style.display = 'none'
-            document.querySelector('[type="submit"]').style.display = 'none'
-            document.querySelector('#load').style.color = 'green'
-            document.querySelector('#process-itemBar').style.width = '100%'
-            document.querySelector('#process').style.color = 'green'
-            document.querySelector('#process-label').textContent = 'Обработка...'
-            let JSONobj = JSON.parse(xhr.response)
-            console.log(JSONobj.status)
-            if (JSONobj.status == 'success') {
-                var xhr2 = new XMLHttpRequest()
-                var formdata2 = new FormData()
-                formdata2.append('id', JSONobj.id)
-                var proccess = setInterval(() => {
-                    xhr2.open('POST', '/checkVideo')
-                    xhr2.send(formdata2)
-                    xhr2.onload = () => {
-                        let JSONobj2 = JSON.parse(xhr2.response)
-                        if(JSONobj2.is_processed == 1){
-                            clearInterval(proccess)
-                            document.querySelector('#process-label').textContent = 'Обработка завершена'
-                            document.querySelector('.video-frame').style.display = 'none'
-                            document.querySelector('video').removeAttribute('hidden')
-                            document.querySelector('source').setAttribute('src', `<?=SITE_URL?>files/uploads/${JSONobj2.video}`)
-                            document.querySelector('video').currentTime = 0
-                            document.querySelector('video').load()
+                        xhr.open('POST', '/uploadVideo')
+                        xhr.upload.addEventListener('progress', e => {
+                            const percent = e.lengthComputable ? (e.loaded / e.total) * 100 : 0;
+                            elem.style.width = percent.toFixed(2) + '%'
+                            document.querySelector('.label').textContent = percent.toFixed(2) + '%'
+                        })
+
+                        xhr.onload = () => {
+                            document.querySelector('.label').style.color = '#52C78F'
+                            document.querySelector('#vid-quality').setAttribute('disabled', true)
+                            document.querySelector('#vid-commentary').setAttribute('disabled', true)
+                            document.querySelector('.video-name').setAttribute('disabled', true)
+                            document.querySelector('.video-desc').setAttribute('disabled', true)
+                            document.querySelector('.video-info').style.display = 'flex'
+                            document.querySelector('[for="inpFile1"]').style.display = 'none'
+                            document.querySelector('.vid-name').style.display = 'none'
+                            document.querySelector('[type="submit"]').style.display = 'none'
+                            document.querySelector('#load').style.color = '#52C78F'
+                            document.querySelector('#process-itemBar').style.width = '100%'
+                            document.querySelector('#process').style.color = '#52C78F'
+                            document.querySelector('#process-label').style.color = '#52C78F'
+                            document.querySelector('#process-label').textContent = 'Обработка...'
+                            let JSONobj = JSON.parse(xhr.response)
+                            console.log(JSONobj.status)
+                            if (JSONobj.status == 'success') {
+                                var xhr2 = new XMLHttpRequest()
+                                var formdata2 = new FormData()
+                                formdata2.append('id', JSONobj.id)
+                                var proccess = setInterval(() => {
+                                    xhr2.open('POST', '/checkVideo')
+                                    xhr2.send(formdata2)
+                                    xhr2.onload = () => {
+                                        let JSONobj2 = JSON.parse(xhr2.response)
+                                        let vidName = JSONobj.name
+                                        let splittedVidName = vidName.split('.')
+                                        console.log(splittedVidName[1])
+                                        if (JSONobj2.is_processed == 1) {
+                                            clearInterval(proccess)
+                                            document.querySelector('#process-label').textContent = 'Обработка завершена'
+                                            document.querySelector('.video-frame').style.display = 'none'
+                                            document.querySelector('video').removeAttribute('hidden')
+                                            document.querySelector('source').setAttribute('src', `<?=SITE_URL?>files/uploads/${JSONobj2.video}`)
+                                            document.querySelector('video').currentTime = 0
+                                            document.querySelector('video').load()
+                                        }
+                                    }
+                                }, 2000)
+                            }
+
+                            let responseObj = xhr.response;
+                            console.log(responseObj); // Привет, мир!
                         }
-                    }
-                }, 2000)
-            }
+                        // let JSONobj = JSON.parse(xhr.response)
+                        // if(JSONobj.name){}
+                        xhr.send(formData)
 
-            let responseObj = xhr.response;
-            console.log(responseObj); // Привет, мир!
-        }
-        xhr.send(formData)
-    }
+                }
+            } else {
+                document.querySelector('.vid-name').style.display = 'inline-table'
+                document.querySelector('.vid-name').style.border = 'none'
+                document.querySelector('.vid-name').style.width = '100%'
+                document.querySelector('.vid-name').style.color = 'red'
+                document.querySelector('.vid-name').textContent = 'Загрузите ВИДЕО, файлы другого формата будут очищаться.'
+                if (i.value) {
+                    try {
+                        i.value = '';
+                    } catch (err) {
+                    }
+                    if (i.value) {
+                        var form = document.createElement('form'),
+                            parentNode = i.parentNode, ref = i.nextSibling;
+                        form.appendChild(i);
+                        form.reset();
+                        parentNode.insertBefore(i, ref);
+                    }
+                }
+            }
+}
 
 
 </script>
