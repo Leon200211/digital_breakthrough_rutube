@@ -1,0 +1,328 @@
+*, *:after, *:before{
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: #F6F6F6;
+}
+video{
+    vertical-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+button, label, a{
+    cursor: pointer;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+}
+
+.video-inputs{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.thatOneForm{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    box-shadow: 1px 1px 10px rgba(0,0,0, 20%);
+}
+.toVidList a{
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0, 5%);
+    transition: .5s;
+}
+.toVidList a:hover{
+    box-shadow: 0px 0px 10px rgba(0,0,0, 10%);
+}
+.container{
+    margin: 0 140px;
+}
+.upload-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 40px;
+    margin-top: 5%;
+}
+.section-title{
+    position: relative;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    font-size: 32px;
+}
+.section-title:after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ddd;
+    width: 100%;
+    height: 0.05em;
+}
+.progressBars{
+    display: flex;
+}
+.progressBar{
+    width: 500px;
+    position: relative;
+    height: 0.15em;
+    background: #ddd;
+    margin-right: 13px;
+}
+.progressBar ion-icon{
+    position: absolute;
+    color: #ddd;
+    right: -14px;
+    top: -7px;
+
+}
+.itemBar{
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: #52C78F;
+}
+.label{
+    margin-top: 7px;
+    text-align: center;
+    color: black;
+}
+#process-label2 {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+}
+#load-label2 {
+    position: absolute;
+    top: -30px;
+    left: 35%;
+    color: #52C78F;
+}
+.team-logo span{
+    font-size: 28px;
+    color: #1d3967;
+    font-weight: 600;
+}
+.team-logo span em{
+    font-style: unset;
+    color: #FF645F;
+}
+.header-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.video-frame{
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("https://pic.rutube.ru/playerstub/b2/3c/b23c27cb55932258b34ea88d4587964c.png");
+    background-size: cover;
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    border-radius: 15px;
+}
+.frame-animation{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.frame-animation ion-icon{
+    font-size: 36px;
+    color: white;
+    animation: rotating .5s infinite ease-out;
+}
+.video-info{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 400px;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+#inpFile{
+    padding: 10px;
+    background: #FF645F;
+    border-radius: 8px;
+    color: white;
+    margin-right: 15px;
+}
+form button{
+    background: #FF645F;
+    border: 5px solid white;
+    outline: 3px solid #f66732;
+    font-size: 20px;
+    padding: 6px;
+    border-radius: 10px;
+    transition: .5s;
+    color: white;
+}
+form button:hover, form button:focus{
+    box-shadow: 0px 0px 10px rgba(0,0,0,20%);
+}
+.info-inputs{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 700px;
+}
+.video-desc{
+    resize: vertical;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.info-inputs input{
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.videos-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px 15px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 10px rgba(0,0,0,10%);
+    margin-top: 20px;
+    border-radius: 15px;
+    width: 100%;
+}
+.vid-name{
+    margin-top: 20px;
+    padding: 5px;
+    width: 10%;
+    text-align: center;
+    border: 1px dashed;
+    display: none;
+}
+.better-quality, .typhlocommentary, #better-quality, #typhlocommentary{
+    position: relative;
+    max-width: 20px;
+}
+#better-quality {
+    background: #383838;
+    padding: 2px 5px;
+    font-size: 12px;
+    border-radius: 10px;
+    color: #ddd;
+}
+#typhlocommentary {
+    background: #383838;
+    padding: 2px 5px;
+    font-size: 12px;
+    border-radius: 10px;
+    color: #ddd;
+}
+.better-quality:before, #better-quality:before{
+    opacity: 0;
+    content: 'Здесь улучшено качество';
+    background: white;
+    color: black;
+    position: absolute;
+    z-index: 999;
+    top: -24px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    left: -62px;
+    font-size: 12px;
+    width: 135px;
+    padding: 5px 10px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,10%);
+    transition: 1s;
+}
+.better-quality:hover:before, #better-quality:hover:before{
+    opacity: 1;
+}
+.typhlocommentary:before, #typhlocommentary:before{
+    color: black;
+    opacity: 0;
+    content: 'Это тифлокомментарий';
+    position: absolute;
+    z-index: 999;
+    top: -26px;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    left: -60px;
+    font-size: 12px;
+    width: 130px;
+    padding: 5px 10px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,10%);
+    transition: 1s;
+}
+.typhlocommentary:hover:before, #typhlocommentary:hover:before{
+    opacity: 1;
+}
+.video-hints{
+    display: flex;
+    gap: 10px;
+}
+.video-checkbox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+@keyframes rotating {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@media (max-width: 800px){
+    .container{
+        margin: 0 50px;
+    }
+    .progressBars{
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .progressBar{
+        max-width: 400px;
+    }
+}
+@media (max-width: 500px) {
+    .container{
+        margin: 0 20px;
+    }
+    .progressBar{
+        max-width: 300px;
+    }
+    .header-line{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 350px) {
+    .container{
+        margin: 0 10px;
+    }
+    .progressBar{
+        max-width: 200px;
+    }
+}
