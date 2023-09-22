@@ -29,12 +29,18 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/templates/default/include/header.php'
                         <div>
                             <?=$video['date_create']?>
                         </div>
-                        <div>
+                        <div class="video-hints">
                             <?php if($video['quality']): ?>
-                                <img src="<?=SITE_URL?>templates/default/free-icon-high-quality-7479467.png" height="20px;" width="20px;">
+                            <div class="better-quality">
+                                <img src="<?=SITE_URL?>templates/default/free-icon-high-quality-7479467.png" style="width: 100%">
+                            </div>
                             <?php endif; ?>
                             <?php if($video['commentary']): ?>
-                                <img src="<?=SITE_URL?>templates/default/free-icon-sound-3293603.png" height="20px;" width="20px;">
+                            <div class="typhlocommentary" onclick="PlaySound('mySound')" style="cursor: pointer;">
+                                <audio id="mySound" src="../../../templates/default/assets/sounds/tts_audio_convert_650d613e7e0b6350568312.mp3"></audio>
+                                <img src="<?=SITE_URL?>templates/default/free-icon-sound-3293603.png" style="width: 100%">
+                            </div>
+
                             <?php endif; ?>
                         </div>
                     </div>
@@ -44,6 +50,18 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/templates/default/include/header.php'
 
         </div>
 </section>
+<script>
+    function PlaySound(soundobj) {
+        var thissound = document.getElementById(soundobj);
+        thissound.play();
+    }
+
+    function StopSound(soundobj) {
+        var thissound = document.getElementById(soundobj);
+        thissound.pause();
+        thissound.currentTime = 0;
+    }
+</script>
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/templates/default/include/footer.php';
 ?>

@@ -17,13 +17,15 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/templates/default/include/header.php'
             <div class="progressBars">
                 <div class="progressBar">
                     <div class="itemBar">
-                        <div class="label"></div>
+                        <div class="label" id="load-label"></div>
+                        <div class="label" id="load-label2"></div>
                     </div>
                     <ion-icon name="checkmark-circle-outline" id="load"></ion-icon>
                 </div>
                 <div class="progressBar" id="process-progressBar">
                     <div class="itemBar" id="process-itemBar">
                         <div class="label" id="process-label"></div>
+                        <div class="label" id="process-label2"></div>
                     </div>
                     <ion-icon name="checkmark-circle-outline" id="process"></ion-icon>
                 </div>
@@ -54,10 +56,12 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/templates/default/include/header.php'
                                 <div class="checkbox">
                                     <input type="checkbox" id="vid-quality">
                                     <label for="vid-quality">Улучшить качество</label>
+                                    <span id="better-quality">?</span>
                                 </div>
                                 <div class="checkbox">
                                     <input type="checkbox" id="vid-commentary">
                                     <label for="vid-quality2">Тифлокомментарии</label>
+                                    <span id="typhlocommentary">?</span>
                                 </div>
                             </div>
                         </div>
@@ -123,10 +127,12 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/templates/default/include/header.php'
                     xhr.upload.addEventListener('progress', e => {
                         const percent = e.lengthComputable ? (e.loaded / e.total) * 100 : 0;
                         elem.style.width = percent.toFixed(2) + '%'
-                        document.querySelector('.label').textContent = percent.toFixed(2) + '%'
+                        document.querySelector('#load-label').textContent = percent.toFixed(2) + '%'
                     })
 
                     xhr.onload = () => {
+
+                        document.querySelector('#load-label2').textContent = 'Загрузка завершена'
                         document.querySelector('.label').style.color = '#52C78F'
                         document.querySelector('#vid-quality').setAttribute('disabled', true)
                         document.querySelector('#vid-commentary').setAttribute('disabled', true)
@@ -143,6 +149,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/templates/default/include/header.php'
                         document.querySelector('#process-label').textContent = 'Обработка...'
                         let JSONobj = JSON.parse(xhr.response)
                         console.log(JSONobj.status)
+                        console.log(JSONobj)
                         if (JSONobj.status == 'success') {
                             var xhr2 = new XMLHttpRequest()
                             var formdata2 = new FormData()
@@ -157,7 +164,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/templates/default/include/header.php'
                                     console.log(splittedVidName[1])
                                     if (JSONobj2.is_processed == 1) {
                                         clearInterval(proccess)
-                                        document.querySelector('#process-label').textContent = 'Обработка завершена'
+                                        document.querySelector('#process-label2').textContent = 'Обработка завершена'
                                         document.querySelector('.video-frame').style.display = 'none'
                                         document.querySelector('video').removeAttribute('hidden')
                                         document.querySelector('source').setAttribute('src', `<?=SITE_URL?>files/uploads/${JSONobj2.video}`)

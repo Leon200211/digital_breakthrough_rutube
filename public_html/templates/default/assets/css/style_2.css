@@ -22,9 +22,7 @@ form{
     flex-direction: column;
     min-width: 500px;
 }
-.video {
-    margin: 40px;
-}
+
 .video-inputs{
     display: flex;
     justify-content: center;
@@ -103,6 +101,17 @@ form{
     margin-top: 7px;
     text-align: center;
     color: black;
+}
+#process-label2 {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+}
+#load-label2 {
+    position: absolute;
+    top: -30px;
+    left: 35%;
+    color: #52C78F;
 }
 .team-logo span{
     font-size: 28px;
@@ -190,8 +199,13 @@ form button:hover, form button:focus{
 .videos-list{
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    padding-top: 40px;
+    gap: 30px;
+    padding: 40px 15px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 10px rgba(0,0,0,10%);
+    margin-top: 20px;
+    border-radius: 15px;
     width: 100%;
 }
 .vid-name{
@@ -201,6 +215,75 @@ form button:hover, form button:focus{
     text-align: center;
     border: 1px dashed;
     display: none;
+}
+.better-quality, .typhlocommentary, #better-quality, #typhlocommentary{
+    position: relative;
+    max-width: 20px;
+}
+#better-quality {
+    background: #383838;
+    padding: 2px 5px;
+    font-size: 12px;
+    border-radius: 10px;
+    color: #ddd;
+}
+#typhlocommentary {
+    background: #383838;
+    padding: 2px 5px;
+    font-size: 12px;
+    border-radius: 10px;
+    color: #ddd;
+}
+.better-quality:before, #better-quality:before{
+    opacity: 0;
+    content: 'Здесь улучшено качество';
+    background: white;
+    color: black;
+    position: absolute;
+    z-index: 999;
+    top: -24px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    left: -62px;
+    font-size: 9px;
+    width: 135px;
+    padding: 5px 10px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,10%);
+    transition: 1s;
+}
+.better-quality:hover:before, #better-quality:hover:before{
+    opacity: 1;
+}
+.typhlocommentary:before, #typhlocommentary:before{
+    color: black;
+    opacity: 0;
+    content: 'Это тифлокомментарий';
+    position: absolute;
+    z-index: 999;
+    top: -26px;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    left: -60px;
+    font-size: 9px;
+    width: 130px;
+    padding: 5px 10px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,10%);
+    transition: 1s;
+}
+.typhlocommentary:hover:before, #typhlocommentary:hover:before{
+    opacity: 1;
+}
+.video-hints{
+    display: flex;
+    gap: 10px;
+}
+.video-checkbox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 
