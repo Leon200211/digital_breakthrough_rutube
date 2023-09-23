@@ -10,7 +10,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/templates/default/include/header.php'
             Мои видео
         </div>
         <div class="toVidList">
-            <a href="<?=SITE_URL?>studio">Загрузить видео <ion-icon name="arrow-forward-outline"></ion-icon></a>
+            <a href="<?=SITE_URL?>studio?path=studio">Загрузить видео <ion-icon name="arrow-forward-outline"></ion-icon></a>
         </div>
         <div class="videos-list">
 

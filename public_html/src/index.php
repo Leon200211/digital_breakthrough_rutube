@@ -19,10 +19,24 @@ session_start(); //стартуем сессию
 require_once 'config.php';  // базовые настройки для хостинга
 require_once 'engine/base/settings/internal_settings.php';  // фундаментальные настройки сайта
 
+
 use engine\base\exceptions\RouteException;  // импортируем пространство имен для исключения
 use engine\base\exceptions\DbException;  // импортируем пространство имен для исключения БД
 use engine\base\controllers\RouteController;
 
+
+if ($_SERVER['REQUEST_URI'] == '/uploadVideo') {
+    $uploadVideo = new \engine\main\controllers\UploadPageController();
+    $uploadVideo->uploadVideo();
+}
+if ($_SERVER['REQUEST_URI'] == '/checkVideo') {
+    $uploadVideo = new \engine\main\controllers\UploadPageController();
+    $uploadVideo->checkVideo();
+}
+if ($_SERVER['REQUEST_URI'] == '/loadVideo') {
+    $uploadVideo = new \engine\main\controllers\UploadPageController();
+    $uploadVideo->uploadVideoFromApi();
+}
 
 try{
     RouteController::getInstance()->route();

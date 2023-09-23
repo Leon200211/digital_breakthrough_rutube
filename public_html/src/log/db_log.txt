@@ -906,3 +906,31 @@ Fault: 20-09-2023 18:36:58 - Ошибка в SQL запросе: SELECT upload_v
 fileC:\OSPanel\domains\work\Leon\digital_breakthrough_rutube\public_html\engine\base\models\BaseModel.php
  In line 57
 
+Fault: 23-09-2023 9:44:50 - Ошибка в SQL запросе: INSERT INTO upload_video (`video`,`name`,`description`,`quality`,`commentary`,`is_processed`) VALUE ('test_879036.mp4','','','0','0','0') - 1364 Field 'id' doesn't have a default value
+file/var/www/html/engine/base/models/BaseModel.php
+ In line 69
+
+Fault: 23-09-2023 10:13:42 - Ошибка в SQL запросе: INSERT INTO upload_video (`video`,`name`,`description`,`quality`,`commentary`,`is_processed`) VALUE ('test_877334.mp4','','','0','0','0') - 1364 Field 'id' doesn't have a default value
+file/var/www/html/engine/base/models/BaseModel.php
+ In line 69
+
+Fault: 23-09-2023 10:29:34 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`video`,upload_video.`name`,upload_video.`description`,upload_video.`date_create`,upload_video.`quality`,upload_video.`commentary`,upload_video.`is_processed` FROM upload_video   ORDER BY upload_video.id DESC - 1146 Table 'digital-breakthrough-rutube.upload_video' doesn't exist
+file/var/www/html/engine/base/models/BaseModel.php
+ In line 69
+
+Fault: 23-09-2023 10:29:53 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`video`,upload_video.`name`,upload_video.`description`,upload_video.`date_create`,upload_video.`quality`,upload_video.`commentary`,upload_video.`is_processed` FROM upload_video   ORDER BY upload_video.id DESC - 1146 Table 'digital-breakthrough-rutube.upload_video' doesn't exist
+file/var/www/html/engine/base/models/BaseModel.php
+ In line 69
+
+Fault: 23-09-2023 10:30:17 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`video`,upload_video.`name`,upload_video.`description`,upload_video.`date_create`,upload_video.`quality`,upload_video.`commentary`,upload_video.`is_processed` FROM upload_video   ORDER BY upload_video.id DESC - 1146 Table 'digital-breakthrough-rutube.upload_video' doesn't exist
+file/var/www/html/engine/base/models/BaseModel.php
+ In line 71
+
+Fault: 23-09-2023 10:30:36 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`video`,upload_video.`name`,upload_video.`description`,upload_video.`date_create`,upload_video.`quality`,upload_video.`commentary`,upload_video.`is_processed` FROM upload_video   ORDER BY upload_video.id DESC - 1146 Table 'digital-breakthrough-rutube.upload_video' doesn't exist
+file/var/www/html/engine/base/models/BaseModel.php
+ In line 71
+
+Fault: 23-09-2023 10:31:00 - Ошибка в SQL запросе: SELECT upload_video.`id`,upload_video.`video`,upload_video.`name`,upload_video.`description`,upload_video.`date_create`,upload_video.`quality`,upload_video.`commentary`,upload_video.`is_processed` FROM upload_video   ORDER BY upload_video.id DESC - 1146 Table 'digital-breakthrough-rutube.upload_video' doesn't exist
+file/var/www/html/engine/base/models/BaseModel.php
+ In line 71
+

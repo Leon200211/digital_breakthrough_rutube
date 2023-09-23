@@ -6,15 +6,34 @@ services:
     volumes:
       - './src:/var/www/html'
 
-  nginx:
-    image: nginx:latest
-    ports:
-      - 80:80
+  #nginx:
+  #  image: nginx:latest
+  #  ports:
+  #    - 80:80
+  #  volumes:
+  #    - './src:/var/www/html'
+  #    - './docker/nginx/conf.d:/etc/nginx/conf.d'
+
+  php-apache-environment:
+    container_name: php-apache
+    #image: php:8.0-apache
+    build:
+      context: docker/php-apache
     volumes:
-      - './src:/var/www/html'
-      - './docker/nginx/conf.d:/etc/nginx/conf.d'
+      - ./src:/var/www/html/
+      - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+    ports:
+      - 8000:80
 
   mysql:
     image: mysql:8
     environment:
       - MYSQL_ROOT_PASSWORD=ROOT
+
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 9001:80
+    environment:
+      - PMA_ARBITRARY=1

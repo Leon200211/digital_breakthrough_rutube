@@ -5,7 +5,7 @@ defined('VG_ACCESS') or die('Access denied');
 
 
 // константы
-const SITE_URL = 'http://localhost/';
+const SITE_URL = 'http://localhost:8000/';
 //const SITE_URL = 'http://digital-breakthrough-rutube/';
 //const SITE_URL = 'http://u1988986.isp.regruhosting.ru/';
 

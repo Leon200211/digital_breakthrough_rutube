@@ -31,9 +31,11 @@ abstract class BaseModel extends BaseModelMethods
 
         $this->db = @new \mysqli($servername, $username, $password);
 
+
+
         $this->db->query('CREATE DATABASE IF NOT EXISTS `digital-breakthrough-rutube`');
         $this->db = @new \mysqli($servername, $username, $password, 'digital-breakthrough-rutube');
-        $this->db->query("CREATE TABLE IF NOT EXISTS `upload_video` (`id` int NOT NULL,`video` varchar(255) NOT NULL,`name` varchar(255) NOT NULL,`description` text NOT NULL,`date_create` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,`quality` int NOT NULL,`commentary` int NOT NULL,`is_processed` int NOT NULL)");
+        $this->db->query("CREATE TABLE IF NOT EXISTS `upload_video` (`id` int NOT NULL AUTO_INCREMENT,`video` varchar(255) NOT NULL,`name` varchar(255) NOT NULL,`description` text NOT NULL,`date_create` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,`quality` int NOT NULL,`commentary` int NOT NULL,`is_processed` int NOT NULL, PRIMARY KEY (id))");
 
 
         // отлов и логирование ошибок

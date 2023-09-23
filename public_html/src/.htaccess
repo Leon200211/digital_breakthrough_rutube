@@ -11,23 +11,20 @@ DirectorySlash Off
 
 
 
-
-
+#Redirect 301 /studio /index.php
 
 
 
 RewriteEngine on
-
 RewriteCond %{REQUEST_FILENAME} !-f
-
 RewriteRule ^(.*) index.php
 
 
-<FilesMatch "\.php$|\.txt$">
-    Order Allow,Deny
-    Deny from all
-</FilesMatch>
-<FilesMatch "index[0-9]?\.php$">
-    Order Allow,Deny
-    Allow from all
-</FilesMatch>
+#<FilesMatch "\.php$|\.txt$">
+#    Order Allow,Deny
+#    Deny from all
+#</FilesMatch>
+#<FilesMatch "index[0-9]?\.php$">
+#    Order Allow,Deny
+#    Allow from all
+#</FilesMatch>

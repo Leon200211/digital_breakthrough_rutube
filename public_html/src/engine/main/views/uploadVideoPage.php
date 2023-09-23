@@ -41,7 +41,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/templates/default/include/header.php'
                         <source src="" type="video/mp4">
                     </video>
                 </div>
-                <form class="form" id="uploadForm" method="POST" enctype="multipart/form-data" action="../../../index.php">
+<!--                <form class="form" id="uploadForm" method="POST" enctype="multipart/form-data">-->
                     <div class="video-inputs">
                         <div class="select-vid">
                             <input type="file" id="inpFile1" class="inpFile" name="inpFile" hidden>
@@ -74,7 +74,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/templates/default/include/header.php'
                         ">
                         Загрузить
                     </button>
-                </form>
+<!--                </form>-->
             </div>
         </div>
     </div>
@@ -86,6 +86,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/templates/default/include/header.php'
     let elem = document.querySelector('.itemBar')
     const rootDiv = document.querySelector('.container')
 
+    let subbtn = document.getElementById('upload_video_btn')
+
     function ext(name) {
         var m = name.match(/\.([^.]+)$/)
         return m && m[1]
@@ -95,6 +97,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/templates/default/include/header.php'
         console.log(1);
         if(inpFile.files.length) {
             let fileName = inpFile.files[0].name
+            console.log(fileName)
             var splittedFileName = ext(fileName)
             document.querySelector('.vid-name').style.display = 'inline-table'
             document.querySelector('.vid-name').textContent = fileName
@@ -110,16 +113,23 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/templates/default/include/header.php'
             document.getElementById('upload_video_btn').removeAttribute('disabled');
             document.getElementById('upload_video_btn').style.background = '#FF645F';
 
-            uploadForm.onsubmit = (e) => {
+            subbtn.onclick = (e) => {
                     e.preventDefault();
-                    const files = document.querySelector('[name=inpFile]').files
+                    const files = document.querySelector('[name=inpFile]').files[0]
                     const formData = new FormData()
-                    formData.append('file', files[0])
+                    formData.append('file', files)
+
+                    console.log(inpFile.files)
+                    console.log(inpFile.files[0])
+                    console.log(files)
+
 
                     formData.append('name', document.getElementById('video_name').value)
                     formData.append('description', document.getElementById('video_description').value)
                     formData.append('quality', document.getElementById('vid-quality').checked)
                     formData.append('commentary', document.getElementById('vid-commentary').checked)
+
+                    console.log(formData)
 
                     const xhr = new XMLHttpRequest()
 
@@ -159,9 +169,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/templates/default/include/header.php'
                                 xhr2.send(formdata2)
                                 xhr2.onload = () => {
                                     let JSONobj2 = JSON.parse(xhr2.response)
-                                    let vidName = JSONobj.name
-                                    let splittedVidName = vidName.split('.')
-                                    console.log(splittedVidName[1])
                                     if (JSONobj2.is_processed == 1) {
                                         clearInterval(proccess)
                                         document.querySelector('#process-label2').textContent = 'Обработка завершена'

@@ -25490,3 +25490,167 @@ Fault: 22-09-2023 18:01:47 - Не найден контроллер
 file/var/www/html/engine/base/controllers/RouteController.php
  In line 62
 
+Fault: 23-09-2023 8:12:52 - Не верное имя файла для подключения - mysqli
+file/var/www/html/engine/base/settings/internal_settings.php
+ In line 46
+
+Fault: 23-09-2023 8:12:55 - Не верное имя файла для подключения - mysqli
+file/var/www/html/engine/base/settings/internal_settings.php
+ In line 46
+
+Fault: 23-09-2023 8:13:34 - Не верное имя файла для подключения - mysqli
+file/var/www/html/engine/base/settings/internal_settings.php
+ In line 46
+
+Fault: 23-09-2023 8:13:50 - Не верное имя файла для подключения - mysqli
+file/var/www/html/engine/base/settings/internal_settings.php
+ In line 46
+
+Fault: 23-09-2023 9:39:21 - Не найден контроллер
+file/var/www/html/engine/base/controllers/RouteController.php
+ In line 62
+
+Fault: 23-09-2023 9:39:38 - Не найден контроллер
+file/var/www/html/engine/base/controllers/RouteController.php
+ In line 62
+
+Fault: 23-09-2023 9:39:57 - Не найден контроллер
+file/var/www/html/engine/base/controllers/RouteController.php
+ In line 62
+
+Fault: 23-09-2023 9:40:00 - Не найден контроллер
+file/var/www/html/engine/base/controllers/RouteController.php
+ In line 62
+
+Fault: 23-09-2023 9:40:13 - Не найден контроллер
+file/var/www/html/engine/base/controllers/RouteController.php
+ In line 62
+
+Fault: 23-09-2023 9:40:28 - Не найден контроллер
+file/var/www/html/engine/base/controllers/RouteController.php
+ In line 62
+
+Fault: 23-09-2023 9:40:30 - Не найден контроллер
+file/var/www/html/engine/base/controllers/RouteController.php
+ In line 62
+
+Fault: 23-09-2023 9:40:34 - Не найден контроллер
+file/var/www/html/engine/base/controllers/RouteController.php
+ In line 62
+
+Fault: 23-09-2023 9:40:36 - Не найден контроллер
+file/var/www/html/engine/base/controllers/RouteController.php
+ In line 62
+
+Fault: 23-09-2023 9:40:46 - Не найден контроллер
+file/var/www/html/engine/base/controllers/RouteController.php
+ In line 62
+
+Fault: 23-09-2023 9:44:34 - Не найден контроллер
+file/var/www/html/engine/base/controllers/RouteController.php
+ In line 62
+
+Fault: 23-09-2023 9:44:36 - Не найден контроллер
+file/var/www/html/engine/base/controllers/RouteController.php
+ In line 62
+
+Fault: 23-09-2023 9:44:38 - Не найден контроллер
+file/var/www/html/engine/base/controllers/RouteController.php
+ In line 62
+
+Fault: 23-09-2023 9:44:38 - Не найден контроллер
+file/var/www/html/engine/base/controllers/RouteController.php
+ In line 62
+
+Fault: 23-09-2023 9:44:39 - Не найден контроллер
+file/var/www/html/engine/base/controllers/RouteController.php
+ In line 62
+
+Fault: 23-09-2023 9:44:39 - Не найден контроллер
+file/var/www/html/engine/base/controllers/RouteController.php
+ In line 62
+
+Fault: 23-09-2023 9:44:40 - Не найден контроллер
+file/var/www/html/engine/base/controllers/RouteController.php
+ In line 62
+
+Fault: 23-09-2023 9:44:40 - Не найден контроллер
+file/var/www/html/engine/base/controllers/RouteController.php
+ In line 62
+
+Fault: 23-09-2023 9:44:42 - Не найден контроллер
+file/var/www/html/engine/base/controllers/RouteController.php
+ In line 62
+
+Fault: 23-09-2023 9:44:43 - Не найден контроллер
+file/var/www/html/engine/base/controllers/RouteController.php
+ In line 62
+
+Fault: 23-09-2023 9:44:44 - Не найден контроллер
+file/var/www/html/engine/base/controllers/RouteController.php
+ In line 62
+
+Fault: 23-09-2023 9:44:45 - Не найден контроллер
+file/var/www/html/engine/base/controllers/RouteController.php
+ In line 62
+
+Fault: 23-09-2023 9:44:54 - Не найден контроллер
+file/var/www/html/engine/base/controllers/RouteController.php
+ In line 62
+
+Fault: 23-09-2023 9:45:07 - Не найден контроллер
+file/var/www/html/engine/base/controllers/RouteController.php
+ In line 62
+
+Fault: 23-09-2023 9:45:22 - Не найден контроллер
+file/var/www/html/engine/base/controllers/RouteController.php
+ In line 62
+
+Fault: 23-09-2023 9:45:24 - Не найден контроллер
+file/var/www/html/engine/base/controllers/RouteController.php
+ In line 62
+
+Fault: 23-09-2023 9:45:51 - Не найден контроллер
+file/var/www/html/engine/base/controllers/RouteController.php
+ In line 63
+
+Fault: 23-09-2023 9:45:51 - Не найден контроллер
+file/var/www/html/engine/base/controllers/RouteController.php
+ In line 63
+
+Fault: 23-09-2023 9:46:09 - Не найден контроллер
+file/var/www/html/engine/base/controllers/RouteController.php
+ In line 63
+
+Fault: 23-09-2023 9:46:40 - Не найден контроллер
+file/var/www/html/engine/base/controllers/RouteController.php
+ In line 64
+
+Fault: 23-09-2023 9:46:45 - Не найден контроллер
+file/var/www/html/engine/base/controllers/RouteController.php
+ In line 64
+
+Fault: 23-09-2023 9:47:22 - Не найден контроллер
+file/var/www/html/engine/base/controllers/RouteController.php
+ In line 64
+
+Fault: 23-09-2023 9:47:27 - Не найден контроллер
+file/var/www/html/engine/base/controllers/RouteController.php
+ In line 64
+
+Fault: 23-09-2023 9:48:12 - Не найден контроллер
+file/var/www/html/engine/base/controllers/RouteController.php
+ In line 64
+
+Fault: 23-09-2023 9:48:15 - Не найден контроллер
+file/var/www/html/engine/base/controllers/RouteController.php
+ In line 64
+
+Fault: 23-09-2023 10:07:33 - Не найден контроллер
+file/var/www/html/engine/base/controllers/RouteController.php
+ In line 67
+
+Fault: 23-09-2023 10:08:06 - Не найден контроллер
+file/var/www/html/engine/base/controllers/RouteController.php
+ In line 68
+

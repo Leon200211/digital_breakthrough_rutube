@@ -117,7 +117,7 @@ class UploadPageController extends BaseController
         if(!$this->model) $this->model = MainModel::getInstance();
         $videoDb = $this->model->read('upload_video', [
            'fields' => ['id', 'video'],
-           'where' => ['id' => $_REQUEST['id']]
+           'where' => ['id' => $_REQUEST['upload_id']]
         ]);
         if (empty($videoDb)) {
             http_response_code(400);
