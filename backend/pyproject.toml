@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "videoupgrading"
+version = "0.1.0"
+description = ""
+authors = []
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+gradio = "^3.44.3"
+fastapi = "^0.103.1"
+aiohttp = "^3.8.5"
+celery = "^5.3.4"
+python-dotenv = "^1.0.0"
+pika = "^1.3.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

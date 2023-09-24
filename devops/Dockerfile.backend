@@ -1,0 +1,16 @@
+FROM python:3.11.5-slim-bookworm
+
+WORKDIR /app
+
+COPY ./backend/poetry.lock ./backend/pyproject.toml ./
+
+RUN python -m pip install --no-cache-dir poetry==1.4.2
+RUN poetry config virtualenvs.create false
+RUN poetry install --without dev,test --no-interaction --no-ansi
+RUN rm -rf $(poetry config cache-dir)/{cache,artifacts}
+
+COPY ./backend ./backend
+COPY ./configs ./configs
+COPY ./util ./util
+
+CMD ["uvicorn", "backend.fastapi_app:app", "--host", "0.0.0.0", "--port", "80"]
