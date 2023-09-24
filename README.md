@@ -1,8 +1,8 @@
 # <p align="center"> ЦИФРОВОЙ ПРОРЫВ: СЕЗОН ИИ </p>
 # <p align="center"> УЛУЧШЕНИЕ КАЧЕСТВА ВИДЕО SUPER-RESOLUTION </p>
-<p align="center">
-![image](https://github.com/Leon200211/digital_breakthrough_rutube/assets/91278041/92bfd582-8c45-4240-9a68-cbe2c9bd45e9)
-</p>
+
+![image](https://github.com/Leon200211/digital_breakthrough_rutube/assets/91278041/698e841b-cdcc-4875-ae8d-ad3d3b6a4963)
+
 
 
 
@@ -44,7 +44,6 @@
 | Low Resolution кадр  | High  Resolution кадр |
 | ------------- | ------------- |
 | ![image](https://github.com/Leon200211/digital_breakthrough_rutube/assets/91278041/e760165e-f2dc-41e0-83d5-cb5166551e0d) | ![image](https://github.com/Leon200211/digital_breakthrough_rutube/assets/91278041/ab13713e-bf73-41d9-818f-e9bb9e94672e)
-  |
 
 
 Если сравнить эти кадры, невооруженным глазом заметно, что модель убрала шумы на заднем плане, улучшила изображение слонов, лица молодного человека, а также в целом стали лучше видны мелкие детали в одежде, фоне. Качество стало значительно лучше.
