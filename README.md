@@ -1,13 +1,13 @@
 # <p align="center"> ЦИФРОВОЙ ПРОРЫВ: СЕЗОН ИИ </p>
 # <p align="center"> УЛУЧШЕНИЕ КАЧЕСТВА ВИДЕО SUPER-RESOLUTION </p>
 <p align="center">
-<img width="743" alt="photo" src="https://github.com/VoLuIcHiK/super-resolution/assets/90902903/0bd4d6c2-c6f1-4922-81af-b41e5526b8ca">
+![image](https://github.com/Leon200211/digital_breakthrough_rutube/assets/91278041/92bfd582-8c45-4240-9a68-cbe2c9bd45e9)
 </p>
 
 
 
 *Состав команды "нейрON"*   
-*Чиженко Леон (https://github.com/Leon200211) - Fullstack-разработчик*    
+*Чиженко Леон (https://github.com/Leon200211) - Backend-разработчик*    
 *Сергей Куликов (https://github.com/MrMarvel) - Backend-разработчик*  
 *Карпов Даниил (https://github.com/Free4ky) - ML-engineer/MLOps*  
 *Валуева Анастасия (https://github.com/VoLuIcHiK) - Team Lead/Designer/ML-engineer*   
@@ -32,7 +32,7 @@
 
 Ниже представлен алгоритм работы ML-части нашего приложения, а также взаимодействие RabbitMQ, обработчика и модели: 
 <p align="center">
-<img width="864" alt="модель" src="https://github.com/VoLuIcHiK/super-resolution/assets/90902903/cae9af8a-f8d0-4d5c-b75c-18f97301ee6c">
+![image](https://github.com/Leon200211/digital_breakthrough_rutube/assets/91278041/ac6e2920-b7aa-4ff4-a409-3f4b7925f54c)
 </p>
 
 Как видно из схемы, обработчик (в данном случае один) постоянно отслеживает появление нового пути к видео во входной очереди (input). Очереди (input и output) были реализованы с помощью сервиса RabbitMQ. Как только обработчик обнаруживает путь во входной очереди - он получает видео по указанному пути, проводит предобработку и отправляет данные в модель, которая развернута на Triton Server. Обработчик ждет, пока модель вернет ему результат обработки. После получения улучшенных кадров обработчик проводит постобработку, загружает видео в хранилище и добавляет новый путь в выходную очередь. 
@@ -43,7 +43,8 @@
 
 | Low Resolution кадр  | High  Resolution кадр |
 | ------------- | ------------- |
-| <img width="600" height="300" alt="image" src="https://github.com/VoLuIcHiK/super-resolution/assets/90902903/4669775d-2ba4-4160-81bd-7652500982bc">  | <img width="600" height="300" alt="image" src="https://github.com/VoLuIcHiK/super-resolution/assets/90902903/f30f38e4-e7f1-4827-8183-28914df1e61c">  |
+| ![image](https://github.com/Leon200211/digital_breakthrough_rutube/assets/91278041/e760165e-f2dc-41e0-83d5-cb5166551e0d) | ![image](https://github.com/Leon200211/digital_breakthrough_rutube/assets/91278041/ab13713e-bf73-41d9-818f-e9bb9e94672e)
+  |
 
 
 Если сравнить эти кадры, невооруженным глазом заметно, что модель убрала шумы на заднем плане, улучшила изображение слонов, лица молодного человека, а также в целом стали лучше видны мелкие детали в одежде, фоне. Качество стало значительно лучше.
@@ -77,15 +78,8 @@
 
 ## <a name="6">Стек </a>
 <div>
-  <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original-wordmark.svg" title="Python" alt="Puthon" width="40" height="40"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg" title="css" alt="css" width="40" height="40"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="js" alt="js" width="40" height="40"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original-wordmark.svg" title="html" alt="html" width="40" height="40"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/php/php-original.svg" title="php" alt="php" width="40" height="40"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/docker/docker-original-wordmark.svg" title="docker" alt="docker" width="40" height="40"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original.svg" title="mysql" alt="mysqlr" width="40" height="40"/>&nbsp;
-  <img src="https://github.com/leungwensen/svg-icon/blob/master/dist/svg/logos/rabbitmq.svg" title="RabbitMQ" alt="RabbitMQ" width="40" height="40"/>&nbsp;
-  <img src="https://github.com/vinceliuice/Tela-icon-theme/blob/master/src/scalable/apps/nvidia.svg" title="Triton" alt="Triton" width="40" height="40"/>&nbsp;
+![image](https://github.com/Leon200211/digital_breakthrough_rutube/assets/91278041/74c3a0eb-b913-4f4d-bd2e-a78863d230d5)
+
 
 ## <a name="7">Развертывание и тестирование </a>
 Проект содержит в себе 4 сервиса:
@@ -105,7 +99,7 @@
 
 1. Склонировать репозиторий 
 ```Bash
-git clone https://github.com/VoLuIcHiK/super-resolution.git
+git clone https://github.com/Leon200211/digital_breakthrough_rutube.git
 ```
 2. Для того, чтобы модели запустились на вашей GPU необходимо предварительно произвести их конвертацию в TensorRT (см. [инструкцию](https://github.com/VoLuIcHiK/super-resolution/tree/main/model_convertation#readme)). Поcле этого просто замените файл `model.plan` в [папке](https://github.com/VoLuIcHiK/super-resolution/tree/main/tensorrt_models_running/real_esrganx4_fp16_tensorrt/1) на новый
 3. В папке проекта выполнить команду 
