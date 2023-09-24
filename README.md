@@ -1,7 +1,8 @@
 # <p align="center"> ЦИФРОВОЙ ПРОРЫВ: СЕЗОН ИИ </p>
 # <p align="center"> УЛУЧШЕНИЕ КАЧЕСТВА ВИДЕО SUPER-RESOLUTION </p>
 
-![image](https://github.com/Leon200211/digital_breakthrough_rutube/assets/91278041/698e841b-cdcc-4875-ae8d-ad3d3b6a4963)
+![image](https://github.com/Leon200211/digital_breakthrough_rutube/assets/91278041/d3281902-8ba9-4927-a682-5dd53d6603a6)
+
 
 
 
@@ -32,7 +33,8 @@
 
 Ниже представлен алгоритм работы ML-части нашего приложения, а также взаимодействие RabbitMQ, обработчика и модели: 
 
-![image](https://github.com/Leon200211/digital_breakthrough_rutube/assets/91278041/ac6e2920-b7aa-4ff4-a409-3f4b7925f54c)
+![image](https://github.com/Leon200211/digital_breakthrough_rutube/assets/91278041/f4fe0922-1a51-4e45-988c-ff5ab5e7fcc9)
+
 
 
 Как видно из схемы, обработчик (в данном случае один) постоянно отслеживает появление нового пути к видео во входной очереди (input). Очереди (input и output) были реализованы с помощью сервиса RabbitMQ. Как только обработчик обнаруживает путь во входной очереди - он получает видео по указанному пути, проводит предобработку и отправляет данные в модель, которая развернута на Triton Server. Обработчик ждет, пока модель вернет ему результат обработки. После получения улучшенных кадров обработчик проводит постобработку, загружает видео в хранилище и добавляет новый путь в выходную очередь. 
@@ -43,7 +45,8 @@
 
 | Low Resolution кадр  | High  Resolution кадр |
 | ------------- | ------------- |
-| ![image](https://github.com/Leon200211/digital_breakthrough_rutube/assets/91278041/e760165e-f2dc-41e0-83d5-cb5166551e0d) | ![image](https://github.com/Leon200211/digital_breakthrough_rutube/assets/91278041/ab13713e-bf73-41d9-818f-e9bb9e94672e)
+| ![image](https://github.com/Leon200211/digital_breakthrough_rutube/assets/91278041/9a54fa87-9989-4756-a3fb-b003931fb73c) | ![image](https://github.com/Leon200211/digital_breakthrough_rutube/assets/91278041/bb800c95-7375-4132-892a-3dbeaa63f2e6)
+
 
 
 Если сравнить эти кадры, невооруженным глазом заметно, что модель убрала шумы на заднем плане, улучшила изображение слонов, лица молодного человека, а также в целом стали лучше видны мелкие детали в одежде, фоне. Качество стало значительно лучше.
